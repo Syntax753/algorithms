@@ -11,10 +11,10 @@ public class FibonacciLastDigit {
         for (int i = 0; i < n - 1; ++i) {
             int tmp_previous = previous;
             previous = current;
-            current = tmp_previous + current;
+            current = (tmp_previous + current)%10;
         }
 
-        return current % 10;
+        return current;
     }
     
     public static void main(String[] args) {
@@ -22,6 +22,7 @@ public class FibonacciLastDigit {
         int n = scanner.nextInt();
         int c = getFibonacciLastDigitNaive(n);
         System.out.println(c);
+        scanner.close();
     }
 }
 
