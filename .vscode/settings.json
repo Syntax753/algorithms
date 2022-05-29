@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "week2_algorithmic_warmup/3_greatest_common_divisor",
         "week2_algorithmic_warmup/2_last_digit_of_fibonacci_number",
         "week2_algorithmic_warmup/1_fibonacci_number",
         "week1_programming_challenges/2_maximum_pairwise_product",
         "week1_programming_challenges/1_sum_of_two_digits",
-        "week2_algorithmic_warmup/3_greatest_common_divisor"
+        "week2_algorithmic_warmup/4_least_common_multiple"
     ]
 }
