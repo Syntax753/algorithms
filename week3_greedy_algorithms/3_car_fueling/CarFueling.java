@@ -26,11 +26,11 @@ public class CarFueling {
 
             if (stops[i] > travel + tank) {
                 travel = scout;
-                scout = 0;
                 refills++;
-            } else {
-                scout = stops[i];
             }
+                
+            scout = stops[i];
+            
         }
 
         if (travel + tank < dist) {
