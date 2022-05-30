@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "week3_greedy_algorithms/2_maximum_value_of_the_loot",
         "week3_greedy_algorithms/1_money_change",
         "week2_algorithmic_warmup/8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers",
         "week2_algorithmic_warmup/7_last_digit_of_the_sum_of_fibonacci_numbers_again",
@@ -11,6 +12,6 @@
         "week2_algorithmic_warmup/1_fibonacci_number",
         "week1_programming_challenges/2_maximum_pairwise_product",
         "week1_programming_challenges/1_sum_of_two_digits",
-        "week3_greedy_algorithms/2_maximum_value_of_the_loot"
+        "week3_greedy_algorithms/3_car_fueling"
     ]
 }
