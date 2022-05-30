@@ -1,29 +1,55 @@
 import java.util.*;
 
 public class FibonacciSumSquares {
-    private static long getFibonacciSumSquaresNaive(long n) {
+    private static long getFibonacciHugeFast(long n, long m) {
         if (n <= 1)
             return n;
 
         long previous = 0;
-        long current  = 1;
-        long sum      = 1;
+        long current = 1;
 
+        List<Long> mods = new ArrayList<>();
+        long cycle = 0;
         for (long i = 0; i < n - 1; ++i) {
+            mods.add(previous);
             long tmp_previous = previous;
             previous = current;
-            current = tmp_previous + current;
-            sum += current * current;
+            current = (tmp_previous + current)%m;
+
+            if (previous == 0 && current == 1) {
+                cycle = i + 1;
+                break;
+            }
         }
 
-        return sum % 10;
+        // System.out.println(mods+ " " +current);
+
+        if (cycle == 0) {
+            return current;
+        } else {
+            return mods.get((int) (n % cycle)) % m;
+        }
+    }
+
+    private static long getFibonacciSumSquaresFast(long n) {
+        if (n <= 1)
+            return n;
+
+        Long fn = getFibonacciHugeFast(n, 10);
+        Long fn_1 = getFibonacciHugeFast(n-1, 10);
+
+        // System.out.println(fn + " "+ fn_1);
+        // System.out.println(fn *(fn+ fn_1));
+
+        return (fn *(fn+ fn_1))%10;
     }
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         long n = scanner.nextLong();
-        long s = getFibonacciSumSquaresNaive(n);
+        long s = getFibonacciSumSquaresFast(n);
         System.out.println(s);
+        scanner.close();
     }
 }
 

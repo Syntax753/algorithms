@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "week2_algorithmic_warmup/7_last_digit_of_the_sum_of_fibonacci_numbers_again",
         "week2_algorithmic_warmup/6_last_digit_of_the_sum_of_fibonacci_numbers",
         "week2_algorithmic_warmup/5_fibonacci_number_again",
         "week2_algorithmic_warmup/4_least_common_multiple",
@@ -8,6 +9,6 @@
         "week2_algorithmic_warmup/1_fibonacci_number",
         "week1_programming_challenges/2_maximum_pairwise_product",
         "week1_programming_challenges/1_sum_of_two_digits",
-        "week2_algorithmic_warmup/7_last_digit_of_the_sum_of_fibonacci_numbers_again"
+        "week2_algorithmic_warmup/8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers"
     ]
 }
