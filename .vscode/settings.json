@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "week3_greedy_algorithms/7_maximum_salary",
         "week3_greedy_algorithms/6_maximum_number_of_prizes",
         "week3_greedy_algorithms/5_collecting_signatures",
         "week3_greedy_algorithms/4_maximum_advertisement_revenue",
@@ -16,6 +17,6 @@
         "week2_algorithmic_warmup/1_fibonacci_number",
         "week1_programming_challenges/2_maximum_pairwise_product",
         "week1_programming_challenges/1_sum_of_two_digits",
-        "week3_greedy_algorithms/7_maximum_salary"
+        "week4_divide_and_conquer/1_binary_search"
     ]
 }
