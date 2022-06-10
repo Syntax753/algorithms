@@ -1,2 +1,2 @@
 # algorithms
-Java algo challenges
+Algorithm challenges
