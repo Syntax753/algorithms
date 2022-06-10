@@ -8,7 +8,7 @@ public class BinarySearch {
         // write your code here
         while (left <= right) {
             int mid = (left + right) / 2;
-            System.out.printf("Mid %d Left %d Right %d a[mid] %d\n", mid, left, right, a[mid]);
+            // System.out.printf("Mid %d Left %d Right %d a[mid] %d\n", mid, left, right, a[mid]);
 
             if (a[mid] == x) {
                 return mid;
@@ -19,14 +19,6 @@ public class BinarySearch {
             }
         }
 
-        return -1;
-    }
-
-    static int linearSearch(int[] a, int x) {
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == x)
-                return i;
-        }
         return -1;
     }
 
@@ -43,7 +35,6 @@ public class BinarySearch {
             b[i] = scanner.nextInt();
         }
         for (int i = 0; i < m; i++) {
-            // replace with the call to binarySearch when implemented
             System.out.print(binarySearch(a, b[i]) + " ");
         }
     }
