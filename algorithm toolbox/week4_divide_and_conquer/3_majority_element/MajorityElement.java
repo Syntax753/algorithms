@@ -2,42 +2,32 @@ import java.util.*;
 import java.io.*;
 
 public class MajorityElement {
+    private static int[] hash = new int[100];
+
     private static int getMajorityElement(int[] a, int left, int right) {
 
-        System.out.printf("left %d, right %d\n", left, right);
-        if (left == right) {
-            System.out.println("left = right");
-            return -1;
-        }
-        if (left + 1 == right) {
-            System.out.println("left +1 = right - "+a[left]);
-            return a[left];
-        }
-        // write your code here
-        int mid = (right + left) / 2;
-        System.out.printf("mid %d\n", mid);
-        int l = getMajorityElement(a, left, mid);
-        System.out.printf("l %d\n", l);
-        int r = getMajorityElement(a, mid, right);
-        System.out.printf("r %d\n", r);
-        if (l == -1) {
-            System.out.println("l == -1 - "+r);
-            return r;
-        }
+        for (int i = 0; i < a.length; i++) {
+            int bucket = a[i]%100;
+            hash[bucket]++;
 
-        if (r == -1) {
-            System.out.println("r == -1 - "+l);
-            return l;
-        }
+            Map<Integer, Integer> lookup = new HashMap<>();
+            if (hash[bucket]>a.length/2) {
+                for (int j = 0; j < a.length ; j++) {
+                     if (a[j]%100 == bucket) {
+                        if (lookup.merge(a[j], 1, (old, one)->old+1) > a.length/2) {
+                            return bucket;
+                        }
+                     }
+                    
+                }
 
-        if (l == r) {
-            System.out.println("r == l - "+l);
-            return l;
+                //System.out.println(lookup);
+            }
         }
-
-        System.out.println("return -1");
+       
         return -1;
     }
+    
 
     public static void main(String[] args) {
         FastScanner scanner = new FastScanner(System.in);
