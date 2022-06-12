@@ -1,0 +1,23 @@
+{
+    "java.project.sourcePaths": [
+        "algorithm toolbox/week4_divide_and_conquer/1_binary_search",
+        "algorithm toolbox/week4_divide_and_conquer/2_binary_search_with_duplicates",
+        "algorithm toolbox/week3_greedy_algorithms/7_maximum_salary",
+        "algorithm toolbox/week3_greedy_algorithms/6_maximum_number_of_prizes",
+        "algorithm toolbox/week3_greedy_algorithms/5_collecting_signatures",
+        "algorithm toolbox/week3_greedy_algorithms/4_maximum_advertisement_revenue",
+        "algorithm toolbox/week3_greedy_algorithms/3_car_fueling",
+        "algorithm toolbox/week3_greedy_algorithms/2_maximum_value_of_the_loot",
+        "algorithm toolbox/week3_greedy_algorithms/1_money_change",
+        "algorithm toolbox/week2_algorithmic_warmup/8_last_digit_of_the_sum_of_squares_of_fibonacci_numbers",
+        "algorithm toolbox/week2_algorithmic_warmup/7_last_digit_of_the_sum_of_fibonacci_numbers_again",
+        "algorithm toolbox/week2_algorithmic_warmup/6_last_digit_of_the_sum_of_fibonacci_numbers",
+        "algorithm toolbox/week2_algorithmic_warmup/5_fibonacci_number_again",
+        "algorithm toolbox/week2_algorithmic_warmup/4_least_common_multiple",
+        "algorithm toolbox/week2_algorithmic_warmup/3_greatest_common_divisor",
+        "algorithm toolbox/week2_algorithmic_warmup/2_last_digit_of_fibonacci_number",
+        "algorithm toolbox/week2_algorithmic_warmup/1_fibonacci_number",
+        "algorithm toolbox/week1_programming_challenges/2_maximum_pairwise_product",
+        "algorithm toolbox/week1_programming_challenges/1_sum_of_two_digits",
+    ]
+}

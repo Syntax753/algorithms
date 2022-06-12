@@ -2,18 +2,28 @@ import java.io.*;
 import java.util.*;
 
 public class BinarySearch {
-
     static int binarySearch(int[] a, int x) {
-        int left = 0, right = a.length;
-        //write your code here
+        int left = 0, right = a.length - 1;
+        // write your code here
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            // System.out.printf("Mid %d Left %d Right %d a[mid] %d\n", mid, left, right, a[mid]);
 
-        return -1;
-    }
+            if (a[mid] == x) {
+                for (int i = mid - 1; i >= 0; i--) {
+                    if (a[i] == x) {
+                        mid = i;
+                    } else break;
+                }
 
-    static int linearSearch(int[] a, int x) {
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == x) return i;
+                return mid;
+            } else if (a[mid] < x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
         }
+
         return -1;
     }
 
@@ -27,13 +37,13 @@ public class BinarySearch {
         int m = scanner.nextInt();
         int[] b = new int[m];
         for (int i = 0; i < m; i++) {
-          b[i] = scanner.nextInt();
+            b[i] = scanner.nextInt();
         }
         for (int i = 0; i < m; i++) {
-            //replace with the call to binarySearch when implemented
-            System.out.print(linearSearch(a, b[i]) + " ");
+            System.out.print(binarySearch(a, b[i]) + " ");
         }
     }
+
     static class FastScanner {
         BufferedReader br;
         StringTokenizer st;
