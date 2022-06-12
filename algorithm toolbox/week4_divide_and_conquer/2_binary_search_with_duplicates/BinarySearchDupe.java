@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class BinarySearch {
+public class BinarySearchDupe {
     static int binarySearch(int[] a, int x) {
         int left = 0, right = a.length - 1;
         // write your code here

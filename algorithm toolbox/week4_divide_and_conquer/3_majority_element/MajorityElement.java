@@ -3,13 +3,39 @@ import java.io.*;
 
 public class MajorityElement {
     private static int getMajorityElement(int[] a, int left, int right) {
+
+        System.out.printf("left %d, right %d\n", left, right);
         if (left == right) {
+            System.out.println("left = right");
             return -1;
         }
         if (left + 1 == right) {
+            System.out.println("left +1 = right - "+a[left]);
             return a[left];
         }
-        //write your code here
+        // write your code here
+        int mid = (right + left) / 2;
+        System.out.printf("mid %d\n", mid);
+        int l = getMajorityElement(a, left, mid);
+        System.out.printf("l %d\n", l);
+        int r = getMajorityElement(a, mid, right);
+        System.out.printf("r %d\n", r);
+        if (l == -1) {
+            System.out.println("l == -1 - "+r);
+            return r;
+        }
+
+        if (r == -1) {
+            System.out.println("r == -1 - "+l);
+            return l;
+        }
+
+        if (l == r) {
+            System.out.println("r == l - "+l);
+            return l;
+        }
+
+        System.out.println("return -1");
         return -1;
     }
 
@@ -26,6 +52,7 @@ public class MajorityElement {
             System.out.println(0);
         }
     }
+
     static class FastScanner {
         BufferedReader br;
         StringTokenizer st;
@@ -54,4 +81,3 @@ public class MajorityElement {
         }
     }
 }
-
