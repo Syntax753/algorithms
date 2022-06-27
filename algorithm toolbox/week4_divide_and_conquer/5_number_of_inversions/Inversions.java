@@ -10,7 +10,18 @@ public class Inversions {
         int ave = (left + right) / 2;
         numberOfInversions += getNumberOfInversions(a, b, left, ave);
         numberOfInversions += getNumberOfInversions(a, b, ave, right);
-        //write your code here
+        
+        for (int i = left+1; i < right; i++) {
+            System.out.print(a[i-1]+" "+a[i]);
+            if (a[i] < a[i-1]) {
+                System.out.print(" invert ");
+                numberOfInversions++;
+
+            } 
+        }
+
+        System.out.println();
+        
         return numberOfInversions;
     }
 
@@ -23,6 +34,7 @@ public class Inversions {
         }
         int[] b = new int[n];
         System.out.println(getNumberOfInversions(a, b, 0, a.length));
+        scanner.close();
     }
 }
 
