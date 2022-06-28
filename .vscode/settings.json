@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "algorithm toolbox/week5_dynamic_programming1/1_money_change_again",
+        "algorithm toolbox/week4_divide_and_conquer/5_number_of_inversions",
         "algorithm toolbox/week4_divide_and_conquer/4_improving_quicksort",
         "algorithm toolbox/week4_divide_and_conquer/3_majority_element",
         "algorithm toolbox/week4_divide_and_conquer/2_binary_search_with_duplicates",
@@ -21,7 +23,6 @@
         "algorithm toolbox/week2_algorithmic_warmup/1_fibonacci_number",
         "algorithm toolbox/week1_programming_challenges/2_maximum_pairwise_product",
         "algorithm toolbox/week1_programming_challenges/1_sum_of_two_digits",
-        "algorithm toolbox/week4_divide_and_conquer/5_number_of_inversions",
-        "algorithm toolbox\\week5_dynamic_programming1\\1_money_change_again"
+        "algorithm toolbox/week5_dynamic_programming1/2_primitive_calculator"
     ]
 }
