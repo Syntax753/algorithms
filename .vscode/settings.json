@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "algorithm toolbox/week5_dynamic_programming1/3_edit_distance",
         "algorithm toolbox/week5_dynamic_programming1/2_primitive_calculator",
         "algorithm toolbox/week5_dynamic_programming1/1_money_change_again",
         "algorithm toolbox/week4_divide_and_conquer/5_number_of_inversions",
@@ -24,6 +25,6 @@
         "algorithm toolbox/week2_algorithmic_warmup/1_fibonacci_number",
         "algorithm toolbox/week1_programming_challenges/2_maximum_pairwise_product",
         "algorithm toolbox/week1_programming_challenges/1_sum_of_two_digits",
-        "algorithm toolbox/week5_dynamic_programming1/3_edit_distance"
+        "algorithm toolbox/week6_dynamic_programming2/1_maximum_amount_of_gold"
     ]
 }
